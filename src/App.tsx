@@ -12,15 +12,27 @@ const router = createBrowserRouter(
       path: "/",
       element: <MainLayout />,
       children: [
-        { index: true, element: <Home /> },
-        { path: "/about", element: <About /> },
-        { path: "/services", element: <Services /> },
-        { path: "/contact", element: <Contact /> },
+        {
+          index: true, // ✅ Root path "/fly_fishing/"
+          element: <Home />,
+        },
+        {
+          path: "about",
+          element: <About />,
+        },
+        {
+          path: "services",
+          element: <Services />,
+        },
+        {
+          path: "contact",
+          element: <Contact />,
+        },
       ],
     },
   ],
   {
-    basename: "/fly_fishing", 
+    basename: "/fly_fishing", // ✅ This is critical for GitHub Pages
   }
 );
 
