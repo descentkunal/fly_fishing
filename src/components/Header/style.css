@@ -1,0 +1,58 @@
+.header-bar {
+  background-color: white!important;
+  box-shadow: none !important;
+  color: black!important;
+}
+
+.header-toolbar {
+  justify-content: space-between;
+}
+
+.header-logo {
+  height: 40px;
+}
+
+.company-name {
+  color: var(--Brown-Default, #514432);
+  font-family: Gluten;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 5px 0 0 10px;
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-link {
+  color: inherit;
+  text-decoration: none;
+  padding-bottom: 4px;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.3s;
+}
+
+.nav-link:hover {
+  border-bottom: 2px solid #ccc;
+}
+
+.nav-link.active {
+  border-bottom: 2px solid var(--Neutral-90, #1C1812);;
+}
+
+
+/* Center mobile drawer items */
+.MuiDrawer-paper .MuiList-root {
+  text-align: center;
+}
+
+.MuiDrawer-paper .MuiListItemButton-root {
+  justify-content: center;
+}
+
+.MuiDrawer-paper .MuiListItemText-root {
+  text-align: center;
+}

@@ -1,0 +1,35 @@
+.footer-container {
+  background-color: #1e1e1e;
+  color: #fff;
+  padding: 32px 0;
+}
+
+.footer-logo {
+  height: 40px;
+}
+
+.footer-link {
+  color: #ccc;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s;
+}
+
+.footer-link:hover {
+  color: #fff;
+}
+
+.footer-bar-icon {
+  height: 24px;
+}
+
+.footer-copy {
+  color: var(--Neutral-30, #AEADAA);
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  margin-top: 24px;
+}
