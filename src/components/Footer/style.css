@@ -9,24 +9,31 @@
 }
 
 .footer-link {
-  color: #ccc;
-  text-decoration: none;
-  font-size: 14px;
-  transition: color 0.3s;
+  color: var(--Neutral-5, #f7f7f6) !important;
+  /* Body/Default */
+  font-family: Inter !important;
+  font-size: 16px !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  line-height: 150% !important;
+  transition: color 0.3s !important;
+  text-decoration: none !important;
 }
 
 .footer-link:hover {
-  color: #fff;
+  color: #b6aeae !important;
 }
 
 .footer-bar-icon {
-  height: 24px;
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
 }
 
 .footer-copy {
-  color: var(--Neutral-30, #AEADAA);
+  color: var(--Neutral-30, #aeadaa);
   text-align: center;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 12px;
   font-style: normal;
   font-weight: 400;

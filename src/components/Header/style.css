@@ -1,7 +1,7 @@
 .header-bar {
-  background-color: white!important;
+  background-color: white !important;
   box-shadow: none !important;
-  color: black!important;
+  color: black !important;
 }
 
 .header-toolbar {
@@ -10,6 +10,12 @@
 
 .header-logo {
   height: 40px;
+}
+
+@media (max-width: 767px) {
+  .header-logo {
+    margin-top: 10px;
+  }
 }
 
 .company-name {
@@ -40,9 +46,8 @@
 }
 
 .nav-link.active {
-  border-bottom: 2px solid var(--Neutral-90, #1C1812);;
+  border-bottom: 2px solid var(--Neutral-90, #1c1812);
 }
-
 
 /* Center mobile drawer items */
 .MuiDrawer-paper .MuiList-root {

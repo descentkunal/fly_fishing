@@ -1,0 +1,165 @@
+.accordion-wrapper {
+  margin-top: 40px;
+  padding: 80px 15%;
+  background: var(--Tan-Lighter, #f1ece1);
+}
+.accordion {
+  background: var(--Tan-Lighter, #f1ece1) !important;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  box-shadow: none !important;
+  border: none !important;
+  overflow: hidden;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.accordion .MuiAccordionDetails-root {
+  padding: 0 !important;
+}
+
+.accordion .MuiAccordionSummary-root {
+  border-bottom: 1px solid #969491;
+}
+
+.accordion .MuiAccordionSummary-root {
+  padding: 0 !important;
+  min-height: unset !important;
+  margin: 0 !important;
+}
+
+.accordion::before {
+  display: none !important;
+}
+
+.accordion-title {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  font-weight: 500 !important;
+  color: #1c1812;
+}
+
+.accordion-details {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.accordion-image {
+  width: 400px;
+  height: auto;
+}
+
+.accordion-text-content {
+  flex: 1;
+  min-width: 250px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.accordion-heading {
+  color: var(--Neutral-90, #1c1812);
+  font-family: Inter;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 112.5%; /* 36px */
+}
+
+.accordion-description {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #65625e;
+  line-height: 1.5;
+}
+
+.accordion-button {
+  align-self: flex-start;
+  padding: 8px 12px;
+  color: var(--Neutral-90, #1c1812);
+  text-align: center;
+  border-radius: 4px;
+  background: var(--Neutral-10, #dfdedd);
+  border: none;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 21px */
+}
+
+.accordion-section-title {
+  color: var(--Neutral-90, #1c1812);
+  font-family: Inter;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 112.5%; /* 54px */
+  margin-bottom: 32px;
+}
+
+/* Target the SVG path and reduce stroke width and fill opacity */
+.accordion .MuiAccordionSummary-expandIconWrapper svg path {
+  fill: #888; /* Lighter color */
+  fill-opacity: 0.6; /* Make it appear less bold */
+}
+
+.card-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.mobile-card {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  min-height: 260px;
+}
+
+.card-overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(223, 222, 221, 0.6); /* Transparent overlay */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card-overlay-content {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+@media (max-width: 767px) {
+  .accordion-wrapper {
+    margin-top: 40px;
+    padding: 40px 24px;
+    background: var(--Tan-Lighter, #f1ece1);
+  }
+
+  .accordion-section-title {
+    color: var(--Neutral-90, #1c1812);
+    font-family: Inter;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 112.5%; /* 54px */
+    margin-bottom: 32px;
+  }
+  .accordion-title {
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    font-weight: 500 !important;
+    color: #1c1812;
+    margin-top: -6px;
+  }
+}

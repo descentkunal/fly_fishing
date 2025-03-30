@@ -1,9 +1,9 @@
-import React from 'react';
-import './style.css';
+import React from "react";
+import "./style.css";
 
 const About: React.FC = () => {
   return (
-    <div className="page">
+    <div className="about-page">
       <h1>About Us</h1>
       <p>Learn more about Central Texas Fly Fishing and our mission.</p>
     </div>

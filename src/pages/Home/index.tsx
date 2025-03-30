@@ -1,12 +1,14 @@
-import React from 'react';
-import HomeHeroSection from '../../components/HomeHeroSection';
+import React from "react";
+import HomeHeroSection from "../../components/HomeHeroSection";
+import HomeAccordion from "../../components/HomeAccordian";
+import HomeMemberStories from "../../components/HomeMemberStories";
 
 const Home: React.FC = () => {
   return (
     <div>
       <HomeHeroSection />
-
-      {/* Future: Add FAQ, Testimonials, etc. here */}
+      <HomeAccordion />
+      <HomeMemberStories />
     </div>
   );
 };

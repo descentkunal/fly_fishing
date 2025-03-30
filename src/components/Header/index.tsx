@@ -1,9 +1,8 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "./style.css";
 import {
   AppBar,
   Toolbar,
-  Typography,
   IconButton,
   Drawer,
   List,
@@ -37,9 +36,9 @@ const Header = () => {
       <Toolbar className="header-toolbar">
         <Box display="flex" alignItems="center" gap={1}>
           <img src={logo} alt="Logo" className="header-logo" />
-          <span className="company-name">
-            Central Texas Fly Fishing
-          </span>
+          {!isMobile && (
+            <span className="company-name">Central Texas Fly Fishing</span>
+          )}
         </Box>
 
         {isMobile ? (

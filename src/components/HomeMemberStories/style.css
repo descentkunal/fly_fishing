@@ -1,0 +1,138 @@
+.member-wrapper {
+  padding: 80px 15%;
+  background-color: #fff;
+}
+
+.member-title {
+  color: var(--Neutral-90, #1c1812);
+  font-family: Inter;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 112.5%;
+  margin-bottom: 48px;
+}
+
+/* ===== Desktop Layout ===== */
+.member-card.desktop {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 24px;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.member-card-image {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.member-card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+}
+
+.member-card-heading {
+  color: var(--Color-Darker, #000);
+  /* Other/Accent */
+  font-family: Gluten;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 48px */
+}
+
+.member-card-description {
+  color: var(--Neutral-60, #65625e);
+  /* Body/Small */
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 21px */
+  margin-bottom: 12px;
+}
+
+.member-card-button {
+  align-self: flex-start;
+  padding: 6px 10px;
+  background-color: var(--Neutral-10, #dfdedd);
+  border: none;
+  border-radius: 4px;
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 400;
+  color: #1c1812;
+  cursor: pointer;
+}
+
+/* ===== Mobile Layout ===== */
+.member-card.mobile {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--Neutral-20, #c6c5c3);
+}
+
+.member-card-content.mobile {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  align-items: flex-start;
+  margin-bottom: 12px;
+}
+
+.member-card-image.mobile {
+  width: 100px;
+  height: 100px;
+  border-radius: 8px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+  .member-card-heading {
+    font-size: 32px;
+    margin-bottom: 16px;
+  }
+
+  .member-card-description {
+    font-size: 15px;
+  }
+
+  .member-card-button {
+    margin-top: 0;
+  }
+
+  .member-title {
+    color: var(--Neutral-90, #1c1812);
+    font-family: Inter;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 112.5%;
+    margin-bottom: 48px;
+    border-bottom: 1px solid var(--Neutral-20, #c6c5c3);
+    padding-bottom: 18px;
+  }
+
+  .member-wrapper {
+    padding: 24px;
+    background-color: #fff;
+  }
+
+  .member-card-button {
+    align-self: flex-start;
+    padding: 8px 12px;
+    background-color: white;
+    border-radius: 4px;
+    border: 1px solid var(--Neutral-40, #969491);
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    color: #1c1812;
+    cursor: pointer;
+  }
+}
